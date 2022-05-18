@@ -3,13 +3,6 @@
 
 int board[9] = {1, 1, 2, 2, 1, 0, 2, 0, 1};
 
-/*
-
-1 - X
-2 - O
-
-*/
-
 void initializeBoard() {
 
 	for (int i = 0; i < 9; i++) {
@@ -110,11 +103,19 @@ int main(void) {
 
 			system("cls");
 			printBoard();
-			printf("game over");
+			break;
 		}
 	}
+	printf("Game Over");
+	printf("\nCheck who won!");
+	printf("\nRun again to play again!");
+	printf("\nPress any key to exit...");
+	getchar();
+	return 0;
+
+
 	
-	
+
 
 
 
